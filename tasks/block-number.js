@@ -1,5 +1,8 @@
 const { task } = require("hardhat/config");
 
+// a task can also interact with a smart contract
+// a task can be better used for plugins and scripts for the development
+
 task("block-number", "prints the current block number").setAction(
     // defining an anonymous function
     async (taskArgs, hre) => {
